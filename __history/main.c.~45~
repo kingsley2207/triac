@@ -1,0 +1,131 @@
+#include <main.h>
+#define LCD_ENABLE_PIN PIN_E0
+#define LCD_RS_PIN PIN_E1
+#define LCD_RW_PIN PIN_E2
+#define LCD_DATA4 PIN_D4
+#define LCD_DATA5 PIN_D5
+#define LCD_DATA6 PIN_D6
+#define LCD_DATA7 PIN_D7
+
+#include <lcd.c>
+
+//!void main()
+//!{ 
+//!
+//!setup_adc(ADC_CLOCK_INTERNAL);
+//!setup_adc_ports(sAN0);
+//!setup_adc_ports(sAN1);
+//!set_adc_channel(0);
+//!set_adc_channel(1);
+//!lcd_init();
+//!
+//!lcd_gotoxy(1,2);
+//!   while(TRUE)
+//!   {
+//!    set_adc_channel(0);
+//!    int16 a = read_adc();
+//!    printf(lcd_putc,"Analog2: %4ld",a);
+//!    lcd_gotoxy(1,1);
+//!    delay_ms(300);
+//!    
+//!    set_adc_channel(1);
+//!    int16 b = read_adc();
+//!    printf(lcd_putc,"Analog1: %4ld",b);
+//!    lcd_gotoxy(1,2);
+//!    delay_ms(300);
+//!    
+//!   }
+//!
+//!}
+
+//!int t=0;
+//!void quet_nut();
+//!#INT_EXT
+//! VOID ngat_ngoai()
+//! {
+//!    quet_nut();
+//! }
+//! void quet_nut()
+//! {
+//! if (input(PIN_C3)==0) //neu nut bam duoc bam
+//!   {  delay_us(50);
+//!      t=t+1;
+//!      if(t>=8) {t=8.5;}
+//!   }
+//! if (input(PIN_C2)==0) //neu nut bam duoc bam
+//!   {  delay_us(50);
+//!      t=t-1;
+//!      if(t<=1) {t=0.5;}
+//!   }
+//! }
+ void main()
+{   //output_low(PIN_C5);
+
+//!    output_low(PIN_D0);
+//!    setup_adc(ADC_CLOCK_INTERNAL);
+//!    setup_adc_ports(sAN0);
+//!    set_adc_channel(0);
+    
+//!    enable_interrupts (INT_EXT); //Cho phep ngat ngoai
+//!    enable_interrupts (INT_EXT_H2L); //Ngat xay ra khi co xung tu cao xuong thap
+//!    enable_interrupts (GLOBAL); //Cho phep ngat
+//!    sleep();
+
+   while (TRUE)
+   {
+   //set_adc_channel(0);
+   
+//!   int16 a = read_adc();
+//!   if (a==1023)
+//!      {
+//!      delay_us(2000);
+//!      output_high(PIN_D0);
+//!      delay_us(6000);
+//!      output_low(PIN_D0);
+//!      }
+//!   }
+   output_high(PIN_D0);
+   output_high(PIN_A0);
+//!void quet_phim()
+//!{   int16 t=350;
+//!    if (input(PIN_D0)==0) //neu nut bam duoc bam
+//!    {  delay_us(50);
+//!       output_high(PIN_C5); delay_ms(t); output_low(PIN_C5);
+//!    }
+    
+//!    else if (input(PIN_D1)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+//!
+//!    else if (input(PIN_D2)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+//!    else if (input(PIN_D3)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+//!    
+//!    else if (input(PIN_D4)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+//!    
+//!    else if (input(PIN_D5)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+//!    
+//!    else if (input(PIN_D6)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+//!    
+//!    else if (input(PIN_D7)==0) //neu nut bam duoc bam
+//!    {
+//!       output_high(PIN_C0); delay_ms(t); output_low(PIN_C0);
+//!    }
+  
+}
+
